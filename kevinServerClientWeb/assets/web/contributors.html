@@ -1,13 +1,52 @@
 <!DOCTYPE html>
-<html lang="CN-zh">
+<html lang="zh-CN">
 <head>
-    <link type="shortcut icon" herf="">
+    <link rel="shortcut icon" href="assets/image/favicon.ico"> <!-- 修正了 href 拼写 -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 增加响应式设计 -->
     <title>贡献者们</title>
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- 增加样式表 -->
+    <style>
+        /* 可以在此处添加样式以美化表格和内容 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #contributorsText {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        #lastTimeEdited {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
 </head>
 <body id="index">
     <div id="container" hidden>
-        <p>在我们的服务器中, 维护与修改是不可避免的, 这些由服务器的贡献者默默无闻的做着, 他们的存在让梦想成了事实, 在此感谢!❤</p>
+        <p>在我们的服务器中，维护与修改是不可避免的，这些由服务器的贡献者默默无闻的做着，他们的存在让梦想成了事实，在此感谢!❤</p>
         <br>
         <p id="contributorsText" class="subTitle">贡献者名单</p>
         <div class="table">
@@ -20,78 +59,44 @@
                         <th id="introduce">介绍</th>
                     </tr>
                 </thead>
-                <tr>
-                    <th><a href="mailto:zbc857758@163.com">Kevin</a></th>
-                    <th>
-                        <p>13</p>
-                    </th>
-                    <th>
-                        <p>服务器管理</p>
-                    </th>
-                    <th>
-                        <p>先天服务器算法圣体💻</p>
-                        <p><s>经常拿服务器做测试 导致服务器崩溃</s></p>
-                    </th>
-                </tr>
-                <tr>
-                    <th><a href="mailto:huz193py@outlook.com">Nike</a></th>
-                    <th>
-                        <p>13</p>
-                    </th>
-                    <th>
-                        <p>官网编写</p>
-                    </th>
-                    <th>
-                        <p>好孩子 小建筑党🏢</p>
-                        <p>写前端有一年了</p>
-                        <p>经常写一些小项目</p>
-                    </th>
-                </tr>
-                <tr>
-                    <th><a href="mailto:f1rst.133@outlook.com">Robin</a></th>
-                    <th>
-                        <p>未知?</p>
-                    </th>
-                    <th>
-                        <p>插件开发</p>
-                    </th>
-                    <th>
-                        <p>Java小孩哥/姐？</p>
-                        <p>帮助学校开发师生登录系统</p>
-                        <p><s>沙袋</s>帮忙设计了一些东西</p>
-                    </th>
-                </tr>
-                <tr>
-                    <th><a href="mailto:f1rst.133@outlook.com">Shine</a></th>
-                    <th>
-                        <p>13</p>
-                    </th>
-                    <th>
-                        <p>技术支持</p>
-                    </th>
-                    <th>
-                        <p>单片机小佬灯!</p>
-                        <p>特别喜欢打台球🎱</p>
-                        <p><s>在谈恋爱(他才13啊???)</s></p>
-                    </th>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td><a href="mailto:zbc857758@163.com">Kevin</a></td>
+                        <td>13</td>
+                        <td>服务器管理</td>
+                        <td>先天服务器算法圣体💻<br><s>经常拿服务器做测试导致服务器崩溃</s></td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:huz193py@outlook.com">Nike</a></td>
+                        <td>13</td>
+                        <td>官网编写</td>
+                        <td>好孩子 小建筑党🏢<br>写前端有一年了<br>经常写一些小项目</td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:f1rst.133@outlook.com">Robin</a></td>
+                        <td>未知?</td>
+                        <td>插件开发</td>
+                        <td>Java小孩哥/姐？<br>帮助学校开发师生登录系统<br><s>沙袋</s>帮忙设计了一些东西</td>
+                    </tr>
+                    <tr>
+                        <td><a href="mailto:f1rst.133@outlook.com">Shine</a></td>
+                        <td>13</td>
+                        <td>技术支持</td>
+                        <td>单片机小佬灯!<br>特别喜欢打台球🎱<br><s>在谈恋爱(他才13啊???)</s></td>
+                    </tr>
+                </tbody>
             </table>
         </div>
-        <p id="lastTimeEdited">本页最后编辑于2024年10月31日</p>
+        <p id="lastTimeEdited">本页最后编辑于 2024 年 10 月 31 日</p>
     </div>
     <div id="manu" style="display: none;">
         <a href="assets/web/" title="主页">
             <img id="icon" src="assets/image/icon.png" alt="主页图标">
         </a>
-    <div id="links">
-        <a href="assets/web/contributors.html">🎈贡献者名单</a>
+        <div id="links">
+            <a href="assets/web/contributors.html">🎈贡献者名单</a>
+        </div>
     </div>
-</div>
+    <script src="./assets/js/main.js"></script>
 </body>
-<style>
-    @import url("./assets/css/text.css");
-    @import url("./assets/css/image.css");
-    @import url("./assets/css/div.css");
-</style>
-<script src="./assets/js/main.js"></script>
 </html>
