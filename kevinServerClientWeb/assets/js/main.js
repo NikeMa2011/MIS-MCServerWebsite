@@ -17,5 +17,5 @@ function addManu() {
     `;
 }
 
-// 再说一次 不要加注释!!!!
+// 以后请在这修改菜单内容 此脚本会自动为网页加上
 document.addEventListener("DOMContentLoaded", addManu);
