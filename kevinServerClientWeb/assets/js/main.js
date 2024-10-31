@@ -17,7 +17,5 @@ function addManu() {
     `;
 }
 
-// 确保在 DOM 加载完成后调用 addManu
+// 再说一次 不要加注释!!!!
 document.addEventListener("DOMContentLoaded", addManu);
-
-
