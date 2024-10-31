@@ -1,0 +1,59 @@
+.table {
+border-radius: 1rem;
+}
+table {
+    border: 1px solid rgba(130, 130, 130, 0.2);
+    border-radius: 1rem;
+    border-spacing: 0;
+}
+thead {
+    background-color: rgba(130, 130, 130, 0.1);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+th {
+    padding: 1.5rem 1rem;
+    text-align: left;
+    font-weight: normal;
+}
+#container {
+    height: 90vh;
+    width: auto;
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+}
+#context {
+    height: 85vh;
+    width: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+#hiddenBox {
+    z-index: 3;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(5px);
+    background-color: #000000;
+    opacity: 0;
+    animation: disAppear 1s ease-out;
+}
+#blurTitle {
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    justify-content: center;
+}
+#manu {
+    display: inline-block;
+    z-index: 4;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding: 1rem;
+}
+#manu:hover {
+    
+}
