@@ -11,7 +11,7 @@ var randomBackGroundNum = Math.floor((Math.random()) * 10);//没有10
 function addManu(){
     manu.innerHTML = `
                      <a href="assets/web/" title="主页">
-            <img id="icon" src="assets/image/icon.png" alt="主页图标">
+            <img id="icon" src="assets/image/icon.jpg" alt="主页图标">
         </a>
     <div id="links">
         <a href="assets/web/contributors.html">🎈贡献者名单</a>
