@@ -22,7 +22,7 @@ code {
     width: fit-content;
     font-size: 2rem;
     padding: .25rem;
-    font-family: monospace;
+    font-family: system-ui;
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
     height: 2rem;
