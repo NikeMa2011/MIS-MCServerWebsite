@@ -20,7 +20,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
-          args:
+          args: |
             # Unique keys of your project and organization
             -Dsonar.projectKey=你的项目密钥
             -Dsonar.organization=你的组织密钥
