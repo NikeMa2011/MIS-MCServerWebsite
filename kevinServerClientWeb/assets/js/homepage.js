@@ -4,8 +4,10 @@ const wellcome = document.getElementById("wellcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const container = document.getElementById("container");
 
-var date = new Date();//初始化
+var date = new Date();
 var clientHour = date.getHours();
+console.log(date, clientHour);
+
 var dayNight;
 
 var backGroundDarkImageList = ["暗色海滩", "暗色室内"];
@@ -16,16 +18,20 @@ function dayNightCompare() {
     randomBackGroundNum = Math.floor((Math.random() * 2));
     if (clientHour > 6 && clientHour < 18) {
         dayNight = true;
-        randomBackGroundString = backGroundLightImageList[randomBackGroundNum];
     } else {
         dayNight = false;
     }
+    setBackGroundImage();
 }
 function setBackGroundImage(){
-    
+    if (dayNight) {
+        randomBackGroundString = backGroundLightImageList[randomBackGroundNum];
+    } else {
+        randomBackGroundString = backGroundDarkImageList[randomBackGroundNum];
+    }
 }
 function refreshBackGroundImage() {
-    body.style.backgroundImage = "url(\"assets/image/" + randomBackGroundString + ".png\"";
+    body.style.backgroundImage = "url(\"assets/image/" + randomBackGroundString + ".jpg\"";
     console.log(body.style.backgroundImage);
 }
 dayNightCompare();
