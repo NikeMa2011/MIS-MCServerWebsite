@@ -1,0 +1,32 @@
+name: SonarCloud analysis
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read
+
+jobs:
+  Analysis:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Analyze with SonarCloud
+        uses: SonarSource/sonarcloud-github-action@4006f663ecaf1f8093e8e4abb9227f6041f52216
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args:
+            # Unique keys of your project and organization
+            -Dsonar.projectKey=你的项目密钥
+            -Dsonar.organization=你的组织密钥
+            # 指定 CSS 源文件目录
+            -Dsonar.sources=src/css  # 假设 CSS 文件在 src/css 目录下
+            # 其他可选设置
+            # -Dsonar.tests= # 如果有测试文件，可以在这里指定
+            # -Dsonar.verbose=true # 如果需要调试信息，可以启用这个选项
+          projectBaseDir: .  # 默认使用当前目录
