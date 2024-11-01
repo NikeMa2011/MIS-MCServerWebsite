@@ -8,21 +8,23 @@ var Date = new Date();//初始化
 var clientHour = date.getHours();
 var dayNight;
 
-var backGroundImageList = ["暗色海滩", "暗色室内", "亮色海滩", "亮色室内"];//5 image
-var randomBackGroundNum;
+var backGroundDarkImageList = ["暗色海滩", "暗色室内"];
+var backGroundLightImageList = [ "亮色海滩", "亮色室内"];
+var randomBackGroundNum, randomBackGroundString;
 
 var maxRandNum, minRandNum;
 function dayNightCompare(){
+    randomBackGroundNum = Math.floor((Math.random() * 2));
     if(clientHour > 6 && clientHour < 21){
         dayNight = true;
     }
     else{
         dayNight = false;
     }
-    randomBackGroundNum = Math.floor((Math.random() * (maxRandNum - minRandNum + 1)) + minRandNum);
+    
 }
 function refreshBackGroundImage() {
-    body.style.backgroundImage = "url(\"assets/image/" + randomBackGroundNum + ".png\"";
+    body.style.backgroundImage = "url(\"assets/image/" + randomBackGroundString + ".png\"";
     console.log(body.style.backgroundImage);
 }
 refreshBackGroundImage();
