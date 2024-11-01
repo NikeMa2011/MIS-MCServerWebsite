@@ -2,7 +2,7 @@ const manu = document.getElementById("manu");
 
 function addManu() {
     manu.innerHTML = `
-        <a id="serverIcon" href="assets/web/" title="主页">
+        <a id="serverIcon" href="" title="主页">
             <img id="icon" src="assets/image/icon.jpg" alt="主页图标">
         </a>
         <div id="links">
