@@ -4,34 +4,36 @@ const wellcome = document.getElementById("wellcome");
 const hiddenBox = document.getElementById("hiddenBox");
 const container = document.getElementById("container");
 
-var Date = new Date();//初始化
+var date = new Date();//初始化
 var clientHour = date.getHours();
 var dayNight;
 
 var backGroundDarkImageList = ["暗色海滩", "暗色室内"];
-var backGroundLightImageList = [ "亮色海滩", "亮色室内"];
+var backGroundLightImageList = ["亮色海滩", "亮色室内"];
 var randomBackGroundNum, randomBackGroundString;
 
-var maxRandNum, minRandNum;
-function dayNightCompare(){
+function dayNightCompare() {
     randomBackGroundNum = Math.floor((Math.random() * 2));
-    if(clientHour > 6 && clientHour < 21){
+    if (clientHour > 6 && clientHour < 18) {
         dayNight = true;
-    }
-    else{
+        randomBackGroundString = backGroundLightImageList[randomBackGroundNum];
+    } else {
         dayNight = false;
     }
+}
+function setBackGroundImage(){
     
 }
 function refreshBackGroundImage() {
     body.style.backgroundImage = "url(\"assets/image/" + randomBackGroundString + ".png\"";
     console.log(body.style.backgroundImage);
 }
+dayNightCompare();
 refreshBackGroundImage();
 
 setTimeout("hiddenBox.hidden = true", 990);
 
-blurTitle.addEventListener("pointerdown", function(){
+blurTitle.addEventListener("pointerdown", function () {
     setTimeout(("wellcome.hidden = true"), 990);
     wellcome.style.animation = "disAppear 1s ease-out";
     setTimeout(() => {
