@@ -22,6 +22,7 @@ code {
     width: fit-content;
     font-size: 2rem;
     padding: .25rem;
+    font-family: monospace;
 }
 /**/
 .subTitle {
