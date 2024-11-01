@@ -28,6 +28,11 @@ code {
     height: 2rem;
 }
 /**/
+.title{
+    padding: 1rem 0.5rem 1rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
 .subTitle {
     padding: 1rem 0.5rem 1rem 0;
     font-size: 2rem;
