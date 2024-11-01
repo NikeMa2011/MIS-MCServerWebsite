@@ -4,13 +4,14 @@
     right: 0px;
     bottom: 0px;
     padding: 1rem;
+    border: 2px solid #ffffff;
 }
 #manu div{
     display: none;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 #manu a{
-    padding: 1rem;
+    padding: 0.5rem;
 }
 #manu:hover div{
     display: block;

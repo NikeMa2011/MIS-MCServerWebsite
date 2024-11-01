@@ -1,4 +1,3 @@
-const body = document.getElementById("index");
 const blurTitle = document.getElementById("blurTitle");
 const wellcome = document.getElementById("wellcome");
 const hiddenBox = document.getElementById("hiddenBox");
@@ -31,8 +30,8 @@ function setBackGroundImage(){
     }
 }
 function refreshBackGroundImage() {
-    body.style.backgroundImage = "url(\"assets/image/" + randomBackGroundString + ".jpg\"";
-    console.log(body.style.backgroundImage);
+    blurTitle.style.backgroundImage = "url(\"assets/image/" + randomBackGroundString + ".jpg\"";
+    console.log(blurTitle.style.backgroundImage);
 }
 dayNightCompare();
 refreshBackGroundImage();
