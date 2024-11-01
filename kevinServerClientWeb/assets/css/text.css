@@ -36,16 +36,18 @@ code {
 .notes {
     font-size: medium;
 }
+.middle{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
 /**/
 #lastTimeEdited {
     padding: 1rem 0 0 0.5rem;
 }
 #wellcome {
     font-size: 5rem;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
 }
 #createdTime {
     font-size: 2rem;

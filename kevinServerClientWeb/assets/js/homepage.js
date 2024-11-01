@@ -15,7 +15,7 @@ var randomBackGroundNum, randomBackGroundString;
 
 function dayNightCompare() {
     randomBackGroundNum = Math.floor((Math.random() * 2));
-    if (clientHour > 6 && clientHour < 18) {
+    if (clientHour > 6 && clientHour < 18) {//判断早上6点至下午6点
         dayNight = true;
     } else {
         dayNight = false;
@@ -23,10 +23,12 @@ function dayNightCompare() {
     setBackGroundImage();
 }
 function setBackGroundImage(){
-    if (dayNight) {
+    if (dayNight) {//true为白天 反之黑夜
         randomBackGroundString = backGroundLightImageList[randomBackGroundNum];
+        wellcome.style.color = "#000000";
     } else {
         randomBackGroundString = backGroundDarkImageList[randomBackGroundNum];
+        wellcome.style.color = "#ffffff";
     }
 }
 function refreshBackGroundImage() {
@@ -45,6 +47,6 @@ blurTitle.addEventListener("pointerdown", function () {
         setTimeout(("blurTitle.hidden = true"), 990);
         blurTitle.style.animation = "flat 1s ease-out";
         container.hidden = false;
-        manu.style = "animation: appear 1s ease-out"//careful of this🧨代码炸了不怪我
+        manu.style.animation = "appear 1s ease-out"//careful of this🧨代码炸了不怪我
     }, 1000);
 });
